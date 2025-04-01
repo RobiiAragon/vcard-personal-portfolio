@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Jesus Aragon - Personal portfolio</title>
 
   <!--
     - favicon
@@ -23,6 +23,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!--
+    - font awesome link (reemplazo para los iconos)
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -46,15 +51,14 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+          <h1 class="name" title="Richard hanrick">Jesús Aragón</h1>
+          <p class="title">Virtual enviroments developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
 
-          <ion-icon name="chevron-down"></ion-icon>
+          <i class="fas fa-chevron-down"></i>
         </button>
 
       </div>
@@ -68,13 +72,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <i class="fas fa-envelope"></i>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:robiiaragon@gmail.com" class="contact-link">robiiaragon@gmail.com</a>
             </div>
 
           </li>
@@ -82,13 +86,27 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <i class="fab fa-github"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/RobiiAragon" class="contact-link">@robiiaragon</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="fas fa-mobile-alt"></i>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+526633016320" class="contact-link">+52 (663) 301-6320</a>
             </div>
 
           </li>
@@ -96,13 +114,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <i class="fas fa-calendar"></i>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="2002-10-01">October 01, 2002</time>
             </div>
 
           </li>
@@ -110,13 +128,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <i class="fas fa-map-marker-alt"></i>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Tijuana Baja California, México</address>
             </div>
 
           </li>
@@ -128,20 +146,26 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.facebook.com/profile.php?id=100085368198453" class="social-link">	
+              <i class="fab fa-facebook-f"></i>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://twitter.com/robiiaragon" class="social-link">
+              <i class="fab fa-twitter"></i>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://instagram.com/robiiaragon" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/jesus-roberto-aragon-lopez-b01b05238/" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
             </a>
           </li>
 
@@ -182,10 +206,6 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -209,21 +229,14 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+        I'm Creative Student Developer from Tijuana, México, working in development proyects and digital media.
+        I enjoy
+        turning complex problems into simple but functional programs.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+        I have a degree on Harvard CS50x (2021 edition), Cisco Networking Academy (C++ Essentials, NDG Linux Essentials and CCNA Essentials) and I'm currently studying a degree in Virtual Enviroments and Digital Bussiness in UTT.
           </p>
-        </section>
-
-
         <!--
           - service
         -->
@@ -234,70 +247,70 @@
 
           <ul class="service-list">
 
-            <li class="service-item">
+        <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+          <div class="service-icon-box">
+            <img src="./assets/images/icon-design.svg
+            " alt="design icon" width="40">
+          </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+          <div class="service-content-box">
+            <h4 class="h4 service-item-title">Virtual enviroments</h4>
 
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
+            <p class="service-item-text">
+          The most modern and high-quality design made at a professional level.
+            </p>
+          </div>
 
-            </li>
+        </li>
 
-            <li class="service-item">
+        <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+          <div class="service-icon-box">
+            <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+          </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+          <div class="service-content-box">
+            <h4 class="h4 service-item-title">Web development</h4>
 
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
+            <p class="service-item-text">
+          High-quality development of sites with JS and php.
+            </p>
+          </div>
 
-            </li>
+        </li>
 
-            <li class="service-item">
+        <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
+          <div class="service-icon-box">
+            <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+          </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+          <div class="service-content-box">
+            <h4 class="h4 service-item-title">Mobile apps</h4>
 
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
+            <p class="service-item-text">
+          Professional development of applications in Kotlin for Android.
+            </p>
+          </div>
 
-            </li>
+        </li>
 
-            <li class="service-item">
+        <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
+          <div class="service-icon-box">
+            <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+          </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+          <div class="service-content-box">
+            <h4 class="h4 service-item-title">Multimedia Content</h4>
 
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
+            <p class="service-item-text">
+          Professional recording and editing of video content for social media and digital platforms.
+            </p>
+          </div>
 
-            </li>
+        </li>
 
           </ul>
 
@@ -314,93 +327,77 @@
 
           <ul class="testimonials-list has-scrollbar">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
+            <figure class="testimonials-avatar-box">
+          <img src="./assets/images/avatar-1.png" alt="Omar Reynosa" width="60" data-testimonials-avatar>
+            </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Omar Reynosa</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
+            <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Jesús helped our electronics workshop with website development and change management. His technical expertise and systematic approach significantly improved our online presence and streamlined our customer service processes.
+          </p>
+            </div>
 
-              </div>
-            </li>
+          </div>
+        </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
+            <figure class="testimonials-avatar-box">
+          <img src="./assets/images/avatar-2.png" alt="Delia Zavala" width="60" data-testimonials-avatar>
+            </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Delia Zavala</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
+            <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Jesús developed a sophisticated Python algorithm for my XRP trading bot. His solution demonstrated exceptional programming skill and deep understanding of financial trading concepts, resulting in a reliable and efficient automated system.
+          </p>
+            </div>
 
-              </div>
-            </li>
+          </div>
+        </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
+            <figure class="testimonials-avatar-box">
+          <img src="./assets/images/avatar-3.png" alt="Ángel Aragón" width="60" data-testimonials-avatar>
+            </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Ángel Aragón</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
+            <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Jesús created a digital prescription software with intelligent medication name autocomplete functionality. This innovation has dramatically reduced transcription errors and improved efficiency in our practice. His understanding of healthcare workflows was impressive.
+          </p>
+            </div>
 
-              </div>
-            </li>
+          </div>
+        </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
+            <figure class="testimonials-avatar-box">
+          <img src="./assets/images/avatar-4.png" alt="Clemente Manjarrez" width="60" data-testimonials-avatar>
+            </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>Clemente Manjarrez</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
+            <div class="testimonials-text" data-testimonials-text>
+          <p>
+            Jesús developed and executed a comprehensive marketing strategy for our "Mucha Vida" franchise in Sinaloa. His digital marketing expertise and creative approach significantly increased our brand visibility and customer engagement across the region.
+          </p>
+            </div>
 
-              </div>
-            </li>
+          </div>
+        </li>
 
           </ul>
 
@@ -417,91 +414,35 @@
 
           <section class="testimonials-modal">
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+        <button class="modal-close-btn" data-modal-close-btn>
+          <i class="fas fa-times"></i>
+        </button>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
+        <div class="modal-img-wrapper">
+          <figure class="modal-avatar-box">
+            <img src="./assets/images/avatar-1.png" alt="Omar Reynosa" width="80" data-modal-img>
+          </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
+          <img src="./assets/images/icon-quote.svg" alt="quote icon">
+        </div>
 
-            <div class="modal-content">
+        <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+          <h4 class="h3 modal-title" data-modal-title>Omar Reynosa</h4>
 
-              <time datetime="2021-06-14">14 June, 2021</time>
+          <time datetime="2021-06-14">14 June, 2021</time>
 
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
+          <div data-modal-text>
+            <p>
+          Jesús helped our electronics workshop with website development and change management. His technical expertise and systematic approach significantly improved our online presence and streamlined our customer service processes. His attention to detail and responsiveness to feedback made him an excellent partner for our digital transformation journey.
+            </p>
+          </div>
 
-            </div>
+        </div>
 
           </section>
 
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
       </article>
 
 
@@ -522,64 +463,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <i class="fas fa-briefcase"></i>
             </div>
 
             <h3 class="h3">Experience</h3>
@@ -589,109 +473,82 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Dinamize Enterprise</h4>
 
-              <span>2015 — Present</span>
+              <span>2024 — Present</span>
 
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
+                <p class="timeline-text">
+                As CEO of Dinamize Enterprise, I lead and manage comprehensive marketing initiatives and digital kiosk solutions for emerging businesses throughout Latin America. Responsible for strategic planning, client relationship management, and overseeing the implementation of innovative digital touchpoints that enhance customer engagement and business visibility. Spearheading expansion efforts to bring accessible digital marketing tools to small and medium enterprises across diverse Latin American markets.
+                </p>
 
             </li>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
 
           </ol>
 
         </section>
 
-        <section class="skill">
+        <section class="timeline">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i class="fas fa-book"></i>
+            </div>
 
-          <ul class="skills-list content-card">
+            <h3 class="h3">Education</h3>
+          </div>
 
-            <li class="skills-item">
+          <ol class="timeline-list">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
+            <li class="timeline-item">
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+              <h4 class="h4 timeline-item-title">CEART</h4>
 
-            </li>
+              <span>2014 — 2017</span>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
+                <p class="timeline-text">
+                Arts school where I participated in extracurricular activities focusing on performing arts and creative expression. Developed artistic skills in vocal training through singing classes, visual arts through photography workshops, and musical performance by learning to play instruments like the guitar. Enhanced my creative abilities and artistic sensibility through performances, exhibitions, and collaborative projects with other students.
+                </p>
 
             </li>
 
-            <li class="skills-item">
+            <li class="timeline-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
+              <h4 class="h4 timeline-item-title">CECYTE BC</h4>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+              <span>2017 — 2020</span>
 
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
+                <p class="timeline-text">
+                Technological high school where I completed a technical education in electronics, gaining hands-on experience with Arduino microcontrollers, integrated circuits, transistors, and home automation systems. Developed practical skills in circuit design, programming electronic components, and implementing smart home solutions through laboratory projects and technical workshops.
+                </p>
 
             </li>
 
-          </ul>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">UT Tijuana</h4>
+
+              <span>2020 — 2022</span>
+
+                <p class="timeline-text">
+                Ended a Technical University in Multiplatform Software Development, where I specialized in backend development within collaborative team environments. Mastered multiple programming languages including Python, Kotlin, C++, Java, C#, PHP, and MySQL. Developed strong foundations in database design, API development, and server-side architecture while contributing to cross-functional projects that delivered robust software solutions. Enhanced my problem-solving capabilities through complex programming challenges and real-world application development.
+                </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">UT Tijuana</h4>
+
+              <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                Currently pursuing a Bachelor's in Virtual Environments and Digital Business, where I've developed comprehensive expertise in the digital ecosystem. My coursework has equipped me with advanced skills in frontend web development utilizing modern frameworks, professional digital design across both 2D and 3D environments, and animation techniques that enhance user experience. I've gained hands-on experience creating immersive video game prototypes, implementing effective digital marketing strategies, and optimizing digital content through SEO best practices. This multidisciplinary education has prepared me to deliver innovative digital solutions that combine technical excellence with business value, enabling me to contribute to projects requiring both creative vision and strategic implementation.
+                </p>
+
+            </li>
+
+          </ol>
 
         </section>
 
@@ -720,10 +577,6 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
               <button data-filter-btn>Applications</button>
             </li>
 
@@ -740,7 +593,7 @@
               <div class="select-value" data-selecct-value>Select category</div>
 
               <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+                <i class="fas fa-chevron-down"></i>
               </div>
 
             </button>
@@ -749,10 +602,6 @@
 
               <li class="select-item">
                 <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
               </li>
 
               <li class="select-item">
@@ -766,171 +615,35 @@
             </ul>
 
           </div>
-
+          
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://dinamize.lat" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <i class="fas fa-eye"></i>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1.jpg" alt="Dinamize Enterprise" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
+                <h3 class="project-title">Dinamize Enterprise</h3>
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://github.com/RobiiAragon/Free-Code-Laravel-installer" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <i class="fas fa-eye"></i>
                   </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project-4.png" alt="Laravel visual installer" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
+                <h3 class="project-title">Laravel visual installer</h3>
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
+            
+            <!-- Puedes agregar más proyectos aquí si lo deseas -->
           </ul>
 
         </section>
@@ -1145,9 +858,9 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107730.52559128495!2d-117.03388534603742!3d32.45720387078615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9390226587bd3%3A0x14724bafa4e62456!2sTijuana%2C%20B.C.!5e0!3m2!1ses!2smx!4v1743495806176!5m2!1ses!2smx"
+              width="400" height="300" loading="lazy">
+            </iframe>
           </figure>
         </section>
 
@@ -1166,7 +879,7 @@
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+              <i class="fas fa-paper-plane"></i>
               <span>Send Message</span>
             </button>
 
@@ -1190,11 +903,7 @@
   -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Eliminamos las referencias a Ionicons que ya no se usan -->
 
 </body>
 
