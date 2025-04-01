@@ -333,7 +333,62 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%; /* Cambiar a círculo completo */
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--shadow-2);
+  transition: transform 0.3s ease;
+}
+.avatar-box::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: var(--text-gradient-yellow);
+  z-index: -1;
+  animation: rotate 4s linear infinite;
+}
+
+.avatar-box::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  background: var(--eerie-black-1);
+  z-index: -1;
+}
+
+.avatar-box img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid var(--jet);
+  transition: transform 0.3s ease;
+}
+
+
+.avatar-box:hover img {
+  transform: scale(1.02);
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Ajuste específico para respuesta en pantallas más grandes - añadir al final de la sección @media */
+@media (min-width: 580px) {
+  .avatar-box {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .avatar-box {
+    padding: 12px;
+  }
 }
 
 .info-content .name {
